@@ -7,15 +7,25 @@
 
 
 <div class="gallery">
-    <?php if( have_rows('gallery') ): ?>
-        <?php while( have_rows('gallery') ): the_row(); // vars
-            $image = get_sub_field('image');
-            $url = get_sub_field('url');
-            $class = get_sub_field('class');
-            ?>
-            <a href="<?php echo $url;?>" class="<?php echo $class;?>">
-                <img src="<?php echo $image?>" alt="">
-            </a>
+    <?php if( have_rows('row') ): ?>
+        <?php while( have_rows('row') ): the_row(); ?>
+            <div class="row">
+                <?php if( have_rows('gallery') ): ?>
+                    <?php while( have_rows('gallery') ): the_row(); // vars
+                        $image = get_sub_field('image');
+                        $class = get_sub_field('class');
+                        ?>
+                        
+                        <div class="<?php echo $class; ?>" style="background-image: url('<?php echo $image; ?>');">
+                            <?php if($class == 'wide logo') { ?>
+                                <a href="javascript:void(0);">
+                                    <img src="<?php echo get_stylesheet_directory_uri().'/images/logo_big.png'; ?>" alt="duaton logo"/>
+                                </a>
+                            <?php }?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
         <?php endwhile; ?>
     <?php endif; ?>
 </div>
