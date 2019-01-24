@@ -57,7 +57,21 @@
             <?php include_once ('images/icon6.svg');?>
         </li>
     </ul>
+</section>
 
+<section class="logos">
+    <ul>
+        <?php if( have_rows('logos') ): ?>
+            <?php while( have_rows('logos') ): the_row(); // vars
+                $image = get_sub_field('image');
+                $alt = get_sub_field('alt');
+                ?>
+                <li>
+                    <img src="<?php echo $image; ?>" alt="<?php echo $alt; ?>"/>
+                </li>
+            <?php endwhile; ?>
+        <?php endif; ?>
+    </ul>
 </section>
 
 <?php get_footer(); ?>

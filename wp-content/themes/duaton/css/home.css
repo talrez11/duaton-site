@@ -86,10 +86,20 @@ section.icons ul li {
 	transition: 0.3s;
 }
 
+section.icons ul li svg {
+	fill: rgb(255, 255, 255);
+	width: auto;
+	height: 150px;
+	display: block;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .path {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
-	transition: all 2s;
+	transition: all 3s;
 	stroke-width: 1px;
 }
 
@@ -101,10 +111,6 @@ section.icons ul li:hover .path{
 	transition: all 3s;
 	stroke-width: 0px;
 }
-
-/*section.icons ul li:hover .path {*/
-	/*stroke-dashoffset: 0;*/
-/*}*/
 
 section.icons ul li h3 {
 	color: rgb(255, 255, 255);
@@ -124,20 +130,22 @@ section.icons ul li span {
 	display: block;
 }
 
-section.icons ul li svg {
-	fill: rgb(255, 255, 255);
-	width: auto;
-	height: 150px;
-	display: block;
-	margin-top: 2em;
-	margin-left: auto;
-	margin-right: auto;
+section.logos {
+	padding: 3em 8em;
 }
 
+section.logos ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 
-
-
-
-
-
-
+section.logos ul li {
+	width: 300px;
+	transition: all 0.3s;
+	margin-bottom: 1em;
+	position: relative;
+	border: 1px solid transparent;
+	overflow: hidden;
+}
