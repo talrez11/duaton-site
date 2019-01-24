@@ -69,9 +69,72 @@ div.row div.logo a img {
 	height: 460px;
 }
 
-/*div.gallery div:hover {*/
-	/*flex-grow: 10;*/
+section.icons {
+	background-color: black;
+	padding: 5em 8em;
+}
+
+section.icons ul {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+section.icons ul li {
+	flex: 1;
+	transition: 0.3s;
+}
+
+.path {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	transition: all 2s;
+	stroke-width: 1px;
+}
+
+section.icons ul li:hover .path{
+	stroke-width: 1px;
+	fill: rgb(249, 160, 27);
+	stroke-dashoffset: 10;
+	stroke-dasharray: 500;
+	transition: all 3s;
+	stroke-width: 0px;
+}
+
+/*section.icons ul li:hover .path {*/
+	/*stroke-dashoffset: 0;*/
 /*}*/
+
+section.icons ul li h3 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	min-height: 4em;
+	border-bottom: 3px solid rgb(255, 255, 255);
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+	white-space: nowrap;
+}
+
+section.icons ul li span {
+	display: block;
+}
+
+section.icons ul li svg {
+	fill: rgb(255, 255, 255);
+	width: auto;
+	height: 150px;
+	display: block;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 
 
 

@@ -31,7 +31,33 @@
 </div>
 
 <section class="icons">
-    <?php include_once ('images/icon1.svg');?>
+    <ul>
+        <li>
+            <h3>עיצוב מצגות<span>בפוורפוינט</span></h3>
+            <?php include_once ('images/icon1.svg');?>
+        </li>
+        <li>
+            <h3>חוזרים לבית ספר<span>עיצוב תיקים ומוצרי נייר</span></h3>
+            <?php include_once ('images/icon2.svg');?>
+        </li>
+        <li>
+            <h3>עיצוב תערוכות<span>ונקודות מכירה</span></h3>
+            <?php include_once ('images/icon3.svg');?>
+        </li>
+        <li>
+            <h3> אפיון <span>ועיצוב אתרים</span></h3>
+            <?php include_once ('images/icon4.svg');?>
+        </li>
+        <li>
+            <h3>מיזוג<span>וזהות תאגידית</span></h3>
+            <?php include_once ('images/icon5.svg');?>
+        </li>
+        <li>
+            <h3>תכנון<span>ועיצוב מארזים</span></h3>
+            <?php include_once ('images/icon6.svg');?>
+        </li>
+    </ul>
+
 </section>
 
 <?php get_footer(); ?>
