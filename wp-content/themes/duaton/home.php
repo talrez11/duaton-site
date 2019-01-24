@@ -30,4 +30,8 @@
     <?php endif; ?>
 </div>
 
+<section class="icons">
+    <?php include_once ('images/icon1.svg');?>
+</section>
+
 <?php get_footer(); ?>
