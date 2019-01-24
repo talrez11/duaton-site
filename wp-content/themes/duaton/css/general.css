@@ -1,0 +1,52 @@
+
+div.container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.container-row {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+div.row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+div.column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.column-small {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+}
+
+div.column-big {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 33.3%);
+}
+
+div.column-big a,
+div.column-small a,
+div.column a,
+div.row a {
+    transition: all 0.8s;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 640px;
+    flex-grow: 1;
+    position: relative;
+}
+
+div.row div:hover:before {
+    background-color: transparent;
+}
