@@ -22,4 +22,19 @@
 </head>
 <body <?php body_class(); ?>>
 
-		<header></header><!-- .site-header -->
+		<header>
+            <div class="top">
+                <a class="logo" href="/">
+                    <img src="<?php echo get_stylesheet_directory_uri().'/images/Logo.svg'; ?>" alt="duaton logo"/>
+                </a>
+                <a href="javascript:void(0)" id="menu"><span></span></a>
+            </div>
+
+            <?php
+            wp_nav_menu( array(
+                    'theme_location' => 'Main Navigation',
+                    'item_spacing' => 'discard'
+                )
+            );
+            ?>
+        </header><!-- .site-header -->

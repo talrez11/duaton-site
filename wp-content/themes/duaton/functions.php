@@ -11,9 +11,7 @@
 		register_nav_menus(
 			array(
 				'Main Menu' => __( 'Main Menu' ),
-				'Features Menu' => __( 'Feature Menu' ),
-				'Main Navigation' => __('Main Navigation'),
-				'Project Menu' => __('Project Menu')
+				'Main Navigation' => __('Main Navigation')
 			)
 		);
 	}

@@ -6,6 +6,10 @@ body {
 	margin: 0;
 }
 
+/*header {*/
+	/*display: none;*/
+/*}*/
+
 div.row {
 	display: flex;
 	flex-direction: row;
