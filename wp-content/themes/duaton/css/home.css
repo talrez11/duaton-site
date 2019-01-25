@@ -103,13 +103,49 @@ section.icons ul li svg {
 	stroke-width: 1px;
 }
 
-section.icons ul li:hover .path{
-	stroke-width: 1px;
-	fill: rgb(249, 160, 27);
-	stroke-dashoffset: 10;
-	stroke-dasharray: 500;
-	transition: all 3s;
-	stroke-width: 0px;
+section.icons ul li:first-of-type svg path {
+	animation: animate 6s linear 0s infinite alternate;
+}
+
+section.icons ul li:nth-of-type(2) svg path {
+	animation: animate 6s linear 1s infinite alternate;
+}
+
+section.icons ul li:nth-of-type(3) svg path {
+	animation: animate 6s linear 2s infinite alternate;
+}
+
+section.icons ul li:nth-of-type(4) svg path {
+	animation: animate 6s linear 3s infinite alternate;
+}
+
+section.icons ul li:nth-of-type(5) svg path {
+	animation: animate 6s linear 4s infinite alternate;
+}
+
+section.icons ul li:nth-of-type(6) svg path {
+	animation: animate 6s linear 5s infinite alternate;
+}
+
+/*section.icons ul li:hover .path{*/
+	/*stroke-width: 1px;*/
+	/*fill: rgb(249, 160, 27);*/
+	/*stroke-dashoffset: 10;*/
+	/*stroke-dasharray: 500;*/
+	/*transition: all 3s;*/
+	/*stroke-width: 0px;*/
+/*}*/
+
+@keyframes animate {
+	from {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+	}
+	to {
+		fill: rgb(249, 160, 27);
+		stroke-dashoffset: 10;
+		stroke-dasharray: 500;
+	}
 }
 
 section.icons ul li h3 {
@@ -148,4 +184,15 @@ section.logos ul li {
 	position: relative;
 	border: 1px solid transparent;
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 1500px) {
+	div.row div {
+		background-size: 100% auto;
+		height: 24.5vw;
+	}
+
+	div.row div.logo a img {
+		height: 24.5vw;
+	}
 }
