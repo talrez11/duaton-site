@@ -23,14 +23,26 @@
                 <div>
                     <input name="company" id="company" type="text" placeholder="חברה"/>
                 </div>
-                <div>
+                <div class="text">
                     <textarea name="message" id="textarea" placeholder="תוכן ההודעה"></textarea>
                 </div>
-                <div id="response"></div>
-                <div>
-                    <input type="submit" title="Send" value="שלח לדואטון"/>
+                <div class="image">
                 </div>
+
+                <div class="submit">
+                    <input type="submit" title="Send" value="שלח לדואטון!"/>
+                </div>
+                <span id="response"></span>
             </form>
+
+            <?php include_once ('images/man_lineart.svg');?>
+            <a href="#top" class="up">
+                <img src="<?php echo get_stylesheet_directory_uri().'/images/icon_errow.svg'; ?>" alt="arrow"/>
+            </a>
+            <div class="copy">
+                <span>עיצוב דואטון</span>
+                <span>כל הזכויות שמורות לסטודיו דואטון Duaton&copy; </span>
+            </div>
 	</footer><!-- .site-footer -->
 </div><!-- .site -->
 

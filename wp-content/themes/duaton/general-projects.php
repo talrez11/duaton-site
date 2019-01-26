@@ -1,6 +1,7 @@
 <?php
 //Template Name: General Projects
     wp_enqueue_style('home-page', get_stylesheet_directory_uri().'/css/general.css?vn='.THEME_VERSION, array(), true);
+    wp_enqueue_script('script', get_stylesheet_directory_uri().'/js/script.js?vn='.THEME_VERSION, array('jquery'), true);
 ?>
 
 <?php get_header(); ?>

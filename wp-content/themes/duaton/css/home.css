@@ -6,9 +6,13 @@ body {
 	margin: 0;
 }
 
-/*header {*/
-	/*display: none;*/
-/*}*/
+header {
+	display: none;
+}
+
+div.gallery {
+	position: relative;
+}
 
 div.row {
 	display: flex;

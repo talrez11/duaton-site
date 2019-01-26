@@ -24,11 +24,11 @@
 	function send_to_mailchimp() {
 		// Put your MailChimp API and List ID hehe
 		$api_key = MAILCHIMP_API;
-		$list_id = 'fc2738ac68';
-		$to = 'office@bardor.co.il';
+		$list_id = '733c6e7e49';
+		$to = 'talreznic11@gmail.com';
 		$cc = 'talreznic11@gmail.com';
 		$from = $_POST['email'];
-		$subject = 'פנייה מאתר בר-דור שערים';
+		$subject = 'פנייה מאתר דואטון';
 		$email_content = $_POST['message'];
 		$content_type = 'Content-Type: text/html; charset=UTF-8';
 		$headers = array();
@@ -49,7 +49,7 @@
 		// For wrapper's doc, visit: https://github.com/drewm/mailchimp-api
 		$result = $MailChimp->put("lists/$list_id/members/".$memberId, [
 			'email_address' => $_POST["email"],
-			'merge_fields'  => ['FNAME'=>$_POST["fname"], 'PHONE'=>$_POST["phone"]],
+			'merge_fields'  => ['FNAME'=>$_POST["fname"], 'PHONE'=>$_POST["phone"], 'COMPANY'=>$_POST["company"]],
 			'status'        => 'subscribed'
 		]);
 

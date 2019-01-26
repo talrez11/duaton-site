@@ -154,5 +154,198 @@ p {
 	margin: 0.5em 0em;
 }
 
+section.menu {
+    width: 50vw;
+    height: 49vw;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 24.5vw;
+}
+
+footer {
+	padding: 3em calc((100% - 1600px)/ 2);
+	background-image: url("/wp-content/themes/duaton/images/footer.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+
+footer h3 {
+	display: block;
+	font-weight: 700;
+	font-size: 2.2rem;
+	color: rgb(255, 130, 49);
+	line-height: 1.5;
+	position: relative;
+}
+
+footer h3:before {
+	content: '';
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("/wp-content/themes/duaton/images/icon_contact.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	width: 135px;
+	height: 145px;
+	margin-bottom: 1em;
+}
+
+#signup {
+	margin-top: 2em;
+	position: relative;
+}
+
+#signup div {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	margin: 1em 1%;
+}
+
+#signup div.text,
+#signup div.image {
+	margin: 1em ;
+	background-color: rgb(255, 255, 255);
+	height: calc(44.6vw * 450/750);
+	position: relative;
+}
+
+#signup div.submit {
+	width: 92%;
+}
+
+#response {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 95%;
+	height: 98%;
+	background-color: rgb(255, 130, 49);
+	z-index: 10000;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#signup div.image {
+	background-image: url("/wp-content/themes/duaton/images/form.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#signup div.image:before {
+	content: '';
+	position: absolute;
+	left: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+#signup div.image img {
+	display: block;
+	width: 100%;
+}
+
+#signup div textarea,
+#signup div input {
+	display: block;
+	width: 100%;
+	padding: 1em;
+	border: none;
+	font-size: 1.3rem;
+	color: black;
+	border: 3px solid transparent;
+	background-color: white
+	transition: all 0.3s;
+}
+
+#signup div textarea {
+	height: 100%;
+}
+
+#signup div input[type="submit"] {
+	background-color: rgb(255, 130, 49);
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	width: 330px;
+	margin-right: auto;
+}
+
+
+#signup div input:hover,
+#signup div input:active {
+	border-color: rgb(255, 130, 49);
+}
+
+footer svg {
+	display: block;
+	position: relative;
+	margin-left: 0em;
+	width: 24%;
+	right: 3em;
+}
+
+footer svg .path {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	transition: all 3s;
+	stroke-width: 1px;
+	animation: animate 6s linear 0s infinite alternate;
+}
+
+@keyframes animate {
+	from {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+	}
+	to {
+		fill: rgb(249, 160, 27);
+		stroke-dashoffset: 10;
+		stroke-dasharray: 500;
+	}
+}
+
+footer a.up {
+	position: absolute;
+	bottom: 150px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 80px;
+	height: 80px;
+}
+
+div.copy {
+	display: block;
+	margin-right: auto;
+	width: 50%;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	margin-left: 3em;
+}
+
+div.copy span {
+	display: inline-block;
+	font-size: 1.2rem;
+}
+
+div.copy span:first-of-type {
+	margin-left: 3em;
+}
+
+
 
 

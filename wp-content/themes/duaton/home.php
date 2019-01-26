@@ -1,12 +1,14 @@
 <?php
     //Template Name: Duaton HP
     wp_enqueue_style('home-page', get_stylesheet_directory_uri().'/css/home.css?vn='.THEME_VERSION, array(), true);
+    wp_enqueue_script('script', get_stylesheet_directory_uri().'/js/script.js?vn='.THEME_VERSION, array('jquery'), true);
 ?>
 
 <?php get_header(); ?>
 
 
 <div class="gallery">
+    <section class="menu"></section>
     <?php if( have_rows('row') ): ?>
         <?php while( have_rows('row') ): the_row(); ?>
             <div class="row">
