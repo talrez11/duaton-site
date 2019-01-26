@@ -25,7 +25,7 @@
 		<header>
             <div class="top">
                 <a class="logo" href="/">
-                    <img src="<?php echo get_stylesheet_directory_uri().'/images/Logo.svg'; ?>" alt="duaton logo"/>
+                    <img src="<?php echo get_stylesheet_directory_uri().'/images/logo_big.png'; ?>" alt="duaton logo"/>
                 </a>
                 <a href="javascript:void(0)" id="menu"><span></span></a>
             </div>
