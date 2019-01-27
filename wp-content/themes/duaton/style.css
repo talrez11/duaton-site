@@ -160,7 +160,7 @@ div.overlay {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 10000;
+	z-index: 100;
 	background-color: black;
 	opacity: 0;
 	visibility: hidden;
@@ -176,11 +176,10 @@ div.menu {
 	height: 49.7vw;
 	background-color: rgb(0, 0, 0);
 	position: absolute;
-	top: 0;
+	top: 30px;
 	z-index: 1000;
 	left: 50%;
 	transform: translateX(-50%);
-	top: 24.5vw;
 	background: url("/wp-content/themes/duaton/images/woman_lineart.svg"), url("/wp-content/themes/duaton/images/contact.jpg");
 	background-repeat: no-repeat;
 	background-position: 167px 167px, center center;
@@ -189,6 +188,10 @@ div.menu {
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.6s;
+}
+
+body.home div.menu {
+	top: 24.5vw;
 }
 
 div.menu.open {

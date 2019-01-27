@@ -66,6 +66,7 @@ jQuery(window).ready(function() {
 		jQuery('div.menu').toggleClass('open');
 	});
 
-
-
+	jQuery('#menu-main-menu a').on('click', function() {
+		jQuery('div.menu').toggleClass('open');
+	});
 });
