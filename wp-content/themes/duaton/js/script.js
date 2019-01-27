@@ -21,11 +21,12 @@ jQuery(window).ready(function() {
 	    }
 	};
 
-	var successResponse = 'תודה שנרשמתם! נציג מטעמנו יחזור אלייכם בקרוב';
-	var errorMessage = 'Something went wrong';
+	var loader = jQuery('.lds-ring');
+	var successResponse = '<h4>תודה שנרשמתם! נציג מטעמנו יחזור אלייכם בקרוב</h4>';
+	var errorMessage = '<h4>תודה שנרשמתם! נציג מטעמנו יחזור אלייכם בקרוב</h4>';
 	jQuery('#signup').on('submit', function() {
 		event.preventDefault();
-		//loader.addClass('show');
+		loader.addClass('show');
 		var ajax_form_data = jQuery(this).serialize();
 		console.log(ajax_form_data);
 		jQuery.ajax({
@@ -35,23 +36,36 @@ jQuery(window).ready(function() {
 			async: true,
 		}).done (function (response) {
 			console.log(response);
+			jQuery('#response').addClass('show');
 			if(response == 1) {
 				jQuery('#response').html(successResponse);
 			} else {
 				jQuery('#response').html(errorMessage);
 			}
-			//loader.removeClass('show');
+			loader.removeClass('show');
 			setTimeout(removeResponseMessage, 5000);
 		});
 	});
 
 	function removeResponseMessage() {
+		jQuery('#response').removeClass('show');
 		jQuery('#response').html(' ');
 	}
 
 	jQuery('header a#menu').on('click', function(event) {
 		event.preventDefault();
 		jQuery(this).toggleClass('open');
+		jQuery('body').toggleClass('open');
+		jQuery('div.menu').toggleClass('open');
+		jQuery('div.overlay').toggleClass('show');
 	});
+
+	//Open menu
+	jQuery('a.menu_open').on('click', function() {
+		jQuery('body').toggleClass('open');
+		jQuery('div.menu').toggleClass('open');
+	});
+
+
 
 });

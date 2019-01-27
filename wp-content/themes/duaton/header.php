@@ -38,3 +38,4 @@
             );
             ?>
         </header><!-- .site-header -->
+        <div class="overlay"></div>

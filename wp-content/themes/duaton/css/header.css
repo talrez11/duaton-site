@@ -34,6 +34,7 @@ a#menu {
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	outline: 0;
+	z-index: 100000;
 }
 
 a#menu span {
@@ -108,7 +109,9 @@ a#menu.open span::after {
 	padding: 2rem 0;
 	font-size: 1.5rem;
 	color: black;
-	transition: all 0.3s
+	transition: all 0.3s;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
 }
 
 #menu-main-navigation li.current-menu-item a {
@@ -117,25 +120,25 @@ a#menu.open span::after {
 
 #menu-main-navigation li.current-menu-item:nth-of-type(1) a,
 #menu-main-navigation li:nth-of-type(1) a:hover {
-	background-color: rgb(255, 157, 59);
+	border-bottom-color: rgb(255, 157, 59);
 }
 
 #menu-main-navigation li.current-menu-item:nth-of-type(2) a,
 #menu-main-navigation li:nth-of-type(2) a:hover {
-	background-color: rgb(0, 206, 207);
+	border-bottom-color: rgb(0, 206, 207);
 }
 
 #menu-main-navigation li.current-menu-item:nth-of-type(3) a,
 #menu-main-navigation li:nth-of-type(3) a:hover {
-	background-color: rgb(170, 208, 82);
+	border-bottom-color: rgb(170, 208, 82);
 }
 
 #menu-main-navigation li.current-menu-item:nth-of-type(4) a,
 #menu-main-navigation li:nth-of-type(4) a:hover {
-	background-color: rgb(102, 0, 15);
+	border-bottom-color: rgb(102, 0, 15);
 }
 
 #menu-main-navigation li.current-menu-item:nth-of-type(5) a,
 #menu-main-navigation li:nth-of-type(5) a:hover {
-	background-color: rgb(0, 77, 73);
+	border-bottom-color: rgb(0, 77, 73);
 }

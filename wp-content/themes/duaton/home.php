@@ -8,7 +8,30 @@
 
 
 <div class="gallery">
-    <section class="menu"></section>
+    <div class="menu">
+        <ul id="menu-main-menu">
+            <li>
+                <a href="javascript:void(0);">אודות
+                    <?php include ('images/icon_round.svg');?>
+                </a>
+            </li>
+            <li>
+                <a href="/פרוייקטים/">עבודות
+                    <?php include ('images/icon_round.svg');?>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">הצוות
+                    <?php include ('images/icon_round.svg');?>
+                </a>
+            </li>
+            <li>
+                <a href="#bottom">צרו איתנו קשר
+                    <?php include ('images/icon_round.svg');?>
+                </a>
+            </li>
+        </ul>
+    </div>
     <?php if( have_rows('row') ): ?>
         <?php while( have_rows('row') ): the_row(); ?>
             <div class="row">
@@ -20,7 +43,7 @@
                         
                         <div class="<?php echo $class; ?>" style="background-image: url('<?php echo $image; ?>');">
                             <?php if($class == 'wide logo') { ?>
-                                <a href="javascript:void(0);">
+                                <a href="javascript:void(0);" class="menu_open">
                                     <img src="<?php echo get_stylesheet_directory_uri().'/images/logo_big.png'; ?>" alt="duaton logo"/>
                                 </a>
                             <?php }?>

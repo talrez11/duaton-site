@@ -154,16 +154,79 @@ p {
 	margin: 0.5em 0em;
 }
 
-section.menu {
-    width: 50vw;
-    height: 49vw;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 24.5vw;
+div.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+	background-color: black;
+	opacity: 0;
+	visibility: hidden;
+}
+
+div.overlay.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+div.menu {
+	width: 50vw;
+	height: 49.7vw;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 24.5vw;
+	background: url("/wp-content/themes/duaton/images/woman_lineart.svg"), url("/wp-content/themes/duaton/images/contact.jpg");
+	background-repeat: no-repeat;
+	background-position: 167px 167px, center center;
+	background-size: 40% auto, cover;
+	padding: 2em 5em;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.6s;
+}
+
+div.menu.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+#menu-main-menu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	position: relative;
+}
+
+#menu-main-menu li a {
+	padding: 1em;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 1.8em;
+	font-weight: 700;
+	position: relative;
+}
+
+#menu-main-menu li a svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) scale(0);
+	transform: translate(-50%, -50%) scale(0);
+	height: 3.5em;
+	transition: all 0.3s;
+}
+
+#menu-main-menu li a:hover svg {
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
 }
 
 footer {
@@ -221,6 +284,7 @@ footer h3:before {
 
 #signup div.submit {
 	width: 92%;
+	position: relative;
 }
 
 #response {
@@ -236,6 +300,19 @@ footer h3:before {
 	margin: 0;
 	visibility: hidden;
 	opacity: 0;
+}
+
+#response h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+}
+
+#response.show {
+	visibility: visible;
+	opacity: 1;
 }
 
 #signup div.image {
@@ -283,7 +360,6 @@ footer h3:before {
 	width: 330px;
 	margin-right: auto;
 }
-
 
 #signup div input:hover,
 #signup div input:active {
@@ -344,6 +420,55 @@ div.copy span {
 
 div.copy span:first-of-type {
 	margin-left: 3em;
+}
+
+
+/*Loader Css*/
+.lds-ring {
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 50%;
+	left: 45px;
+	z-index: 10000;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.lds-ring.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.lds-ring article {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 51px;
+	height: 51px;
+	margin: 6px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #fff transparent transparent transparent;
+}
+.lds-ring article:nth-child(1) {
+	animation-delay: -0.45s;
+}
+.lds-ring article:nth-child(2) {
+	animation-delay: -0.3s;
+}
+.lds-ring article:nth-child(3) {
+	animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 

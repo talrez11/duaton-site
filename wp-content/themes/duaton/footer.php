@@ -7,7 +7,7 @@
  */
 ?>
 	</div><!-- .site-content -->
-	<footer>
+	<footer id="bottom">
             <h3>השאירו לנו פרטים או פשוט תתקשרו אלינו - 09-7711260<br>פותחים יומן? מתי נפגשים לקפה אצנו?</h3>
             <form id="signup" method="post">
                 <input type="hidden" name="action" value="send_to_mailchimp"/>
@@ -30,6 +30,7 @@
                 </div>
 
                 <div class="submit">
+                    <article class="lds-ring"><article></article><article></article><article></article><article></article></article>
                     <input type="submit" title="Send" value="שלח לדואטון!"/>
                 </div>
                 <span id="response"></span>
