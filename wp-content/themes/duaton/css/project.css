@@ -1,0 +1,128 @@
+/*
+    Project page style
+*/
+
+.menu-main-navigation-container {
+    display: none;
+}
+
+section.header {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    height: calc(100vw * 850/1935);
+    position: relative;
+}
+
+section.header div.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 1em 1.5em;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+section.header div.title h2,
+section.header div.title p {
+    display: inline-block;
+}
+
+section.content {
+    display: block;
+    margin: 2em auto;
+    width: 95%;
+    border: 2px solid black;
+}
+
+section.content div {
+    text-align: center;
+    padding: 3em 0em;
+    font-size: 1.5rem;
+}
+
+section.project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+
+div.container-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+div.container-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+div.row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+div.column {
+    display: flex;
+    flex-direction: column;
+}
+
+div.column-small {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin-bottom: 2%;
+}
+
+div.column-big {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.column-big a,
+div.column-small a,
+div.column a,
+div.row a {
+    transition: all 0.8s;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 640px;
+    flex-grow: 1;
+    position: relative;
+}
+
+div.row a.large {
+    height: calc(100vw * (840/1820));
+}
+
+div.row div:hover:before {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1920px) {
+    div.column-big a,
+    div.column-small a,
+    div.column a,
+    div.row a {
+        height: 46.5vw;
+        background-size: cover;
+    }
+
+    div.column-big a.large {
+        height: 65.5vw;
+        background-size: 100% auto;
+    }
+}
