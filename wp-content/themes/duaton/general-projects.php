@@ -5,30 +5,8 @@
 ?>
 
 <?php get_header(); ?>
-<div class="menu">
-    <ul id="menu-main-menu">
-        <li>
-            <a href="javascript:void(0);">אודות
-                <?php include ('images/icon_round.svg');?>
-            </a>
-        </li>
-        <li>
-            <a href="/פרוייקטים/">עבודות
-                <?php include ('images/icon_round.svg');?>
-            </a>
-        </li>
-        <li>
-            <a href="javascript:void(0);">הצוות
-                <?php include ('images/icon_round.svg');?>
-            </a>
-        </li>
-        <li>
-            <a href="#bottom">צרו איתנו קשר
-                <?php include ('images/icon_round.svg');?>
-            </a>
-        </li>
-    </ul>
-</div>
+<?php include_once ('includes/menu.php');?>
+<?php include_once ('includes/about.php');?>
 <section>
     <?php if( have_rows('column') ): ?>
         <?php while( have_rows('column') ): the_row();?>

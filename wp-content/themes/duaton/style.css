@@ -154,6 +154,7 @@ p {
 	margin: 0.5em 0em;
 }
 
+div.about_overlay,
 div.overlay {
 	position: fixed;
 	top: 0;
@@ -166,14 +167,20 @@ div.overlay {
 	visibility: hidden;
 }
 
+div.about_overlay.show,
 div.overlay.show {
 	opacity: 1;
 	visibility: visible;
 }
 
+div.about_overlay.show {
+	z-index: 100000;
+}
+
+
 div.menu {
 	width: 50vw;
-	height: 49.7vw;
+	height: 49vw;
 	background-color: rgb(0, 0, 0);
 	position: absolute;
 	top: 30px;
@@ -230,6 +237,50 @@ div.menu.open {
 #menu-main-menu li a:hover svg {
 	-webkit-transform: translate(-50%, -50%) scale(1);
 	transform: translate(-50%, -50%) scale(1);
+}
+
+div#about {
+	display: block;
+	background-image: url("/wp-content/themes/duaton/images/about.jpg");
+	background-repeat: no-repeat;
+	background-position: center -330px;
+	background-size: 100% auto;
+	height: calc(100vw * (1960/960));
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 10000;
+	padding: 2em;
+	opacity: 0;
+	visibility: hidden;
+}
+
+div#about.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+div#about h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+div#about p {
+	margin: 1.5em 0em;
+	font-size: 1.3rem;
+	line-height: 1.2;
+}
+
+div#about a.close {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	width: 2em;
+	height: 2em;
+	background-color: black;
+	border-radius: 50%;
 }
 
 footer {
@@ -347,7 +398,7 @@ footer h3:before {
 	font-size: 1.3rem;
 	color: black;
 	border: 3px solid transparent;
-	background-color: white
+	background-color: white;
 	transition: all 0.3s;
 }
 
@@ -471,6 +522,12 @@ div.copy span:first-of-type {
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	div#about {
+		background-position: center -230px;
 	}
 }
 

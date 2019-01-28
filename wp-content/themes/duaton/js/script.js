@@ -67,6 +67,36 @@ jQuery(window).ready(function() {
 	});
 
 	jQuery('#menu-main-menu a').on('click', function() {
+		if(jQuery(this).hasClass('about')) {
+			jQuery('div.about_overlay').toggleClass('show');
+			jQuery('div#about').toggleClass('open');
+		}
+
+		if(jQuery(this).hasClass('bottom')) {
+			jQuery('body, html').animate({
+				scrollTop: jQuery( jQuery(this).attr('href') ).offset().top + 50
+			}, 600);
+		}
+
 		jQuery('div.menu').toggleClass('open');
+		jQuery('body').toggleClass('open');
+		jQuery('div.overlay').removeClass('show');
+		jQuery('a#menu').removeClass('open');
+	});
+
+	//close about us popup
+	jQuery('div#about a.close').on('click', function() {
+		jQuery('a#menu').removeClass('open');
+		jQuery('div#about').toggleClass('open');
+		jQuery('div.overlay').removeClass('show');
+		jQuery('div.about_overlay').toggleClass('show');
+		jQuery('html, body').animate({scrollTop:0}, 'slow');
+	});
+
+	//Scroll up button
+	jQuery('footer a.up').on('click', function() {
+		jQuery('body, html').animate({
+			scrollTop: jQuery( jQuery(this).attr('href') ).offset().top + 50
+		}, 600);
 	});
 });
