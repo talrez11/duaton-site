@@ -19,6 +19,7 @@
                                     $image = get_sub_field('image');
                                     $class = get_sub_field('class');
                                     $url = get_sub_field('url');
+
                                 ?>
                                     <a href="<?php echo $url; ?>" class="<?php echo $class; ?>" style="background-image: url('<?php echo $image; ?>');"></a>
                                 <?php endwhile; ?>

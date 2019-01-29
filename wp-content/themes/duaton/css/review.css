@@ -1,0 +1,64 @@
+/*
+    Reviews Style
+*/
+
+.menu-main-navigation-container {
+    display: none;
+}
+
+section.header {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    height: calc(100vw * 850/1935);
+    position: relative;
+}
+
+section.header div.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    padding: 1em 1.5em;
+    display: inline-block;
+    white-space: nowrap;
+    color: rgb(255, 157, 59);
+}
+
+section.header div.title h2,
+section.header div.title p {
+    display: inline-block;
+}
+
+section.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 95%;
+}
+
+section.review div {
+    padding: 1em 0em;
+    border-bottom: 3px solid rgb(255, 130, 49);
+    font-size: 1.5rem;
+}
+
+section.review div:first-of-type {
+    margin-top: 1em;
+    border-top: 3px solid rgb(255, 130, 49);
+}
+
+section.review div:last-of-type {
+    border-bottom: none;
+}
+
+section.review div strong {
+    display: block;
+    margin-top: 0.5em;
+    text-align: center;
+    font-weight: 700;
+}

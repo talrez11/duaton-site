@@ -11,7 +11,7 @@
             </a>
         </li>
         <li>
-            <a href="javascript:void(0);">כתבו עלינו
+            <a href="/ממליצים/">כתבו עלינו
                 <?php include ('wp-content/themes/duaton/images/icon_round.svg');?>
             </a>
         </li>
