@@ -212,3 +212,13 @@ section.logos ul li {
 		height: 24.5vw;
 	}
 }
+
+@media only screen and (max-width: 1700px) {
+	section.icons {
+		padding: 5em 3em;
+	}
+
+	section.logos {
+		padding: 3em 1em;
+	}
+}

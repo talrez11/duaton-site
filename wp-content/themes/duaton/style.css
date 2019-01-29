@@ -187,13 +187,13 @@ div.menu {
 	height: 49vw;
 	background-color: rgb(0, 0, 0);
 	position: absolute;
-	top: 30px;
+	top: 0px;
 	z-index: 1000;
 	left: 50%;
 	transform: translateX(-50%);
 	background: url("/wp-content/themes/duaton/images/woman_lineart.svg"), url("/wp-content/themes/duaton/images/contact.jpg");
 	background-repeat: no-repeat;
-	background-position: 167px 167px, center center;
+	background-position: 167px 145px, center center;
 	background-size: 40% auto, cover;
 	padding: 2em 5em;
 	opacity: 0;
@@ -529,9 +529,24 @@ div.copy span:first-of-type {
 	}
 }
 
+@media only screen and (max-width: 1600px) {
+	div.menu {
+		padding: 0.5em 5em;
+		background-position: 167px 135px, center center;
+	}
+
+	#menu-main-menu li a {
+		padding: 0.8em;
+	}
+}
+
 @media only screen and (max-width: 1500px) {
 	div#about {
-		background-position: center -230px;
+		background-position: center -220px;
+	}
+
+	section.icons {
+		padding: 5em 3em;
 	}
 }
 
