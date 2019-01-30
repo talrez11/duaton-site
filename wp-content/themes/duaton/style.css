@@ -244,26 +244,31 @@ div.menu.open {
 }
 
 div#about {
-	display: block;
 	background-image: url("/wp-content/themes/duaton/images/about.jpg");
 	background-repeat: no-repeat;
-	background-position: center -330px;
+	background-position: center center;
 	background-size: 100% auto;
-	height: calc(100vw * (1960/960));
+	height: calc(100vw * (960/1920));
 	position: absolute;
-	top: 0;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	z-index: 10000;
+	top: 50%;
+	left: 0%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1000000000000;
 	padding: 2em;
 	opacity: 0;
 	visibility: hidden;
+	width: 100vw;
 }
 
 div#about.open {
 	opacity: 1;
 	visibility: visible;
+}
+
+div#about article {
+	display: block;
+	width: 35%;
 }
 
 div#about h3 {
@@ -446,7 +451,6 @@ footer svg .path {
 		stroke-dashoffset: 1000;
 	}
 	to {
-		fill: rgb(249, 160, 27);
 		stroke-dashoffset: 10;
 		stroke-dasharray: 500;
 	}
@@ -454,7 +458,7 @@ footer svg .path {
 
 footer a.up {
 	position: absolute;
-	bottom: 150px;
+	bottom: 250px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -541,9 +545,6 @@ div.copy span:first-of-type {
 }
 
 @media only screen and (max-width: 1500px) {
-	div#about {
-		background-position: center -220px;
-	}
 
 	section.icons {
 		padding: 5em 3em;

@@ -55,7 +55,7 @@ jQuery(window).ready(function() {
 	jQuery('header a#menu').on('click', function(event) {
 		event.preventDefault();
 		jQuery(this).toggleClass('open');
-		jQuery('body').toggleClass('open');
+		jQuery('body').toggleClass('open up');
 		jQuery('div.menu').toggleClass('open');
 		jQuery('div.overlay').toggleClass('show');
 	});
@@ -74,7 +74,7 @@ jQuery(window).ready(function() {
 
 		if(jQuery(this).hasClass('bottom')) {
 			jQuery('body, html').animate({
-				scrollTop: jQuery( jQuery(this).attr('href') ).offset().top + 50
+				scrollTop: jQuery( jQuery(this).attr('href') ).offset().top + 200
 			}, 600);
 		}
 

@@ -11,7 +11,7 @@ div.top {
 
 div.top a.logo {
 	position: absolute;
-	left: 230px;
+	left: 290px;
 	top: 50%;
 	-webkit-transform: translateY(-50%) rotate(90deg);
 	transform: translateY(-50%) rotate(90deg);
@@ -29,7 +29,7 @@ a#menu {
 	position: absolute;
 	display: inline-block;
 	top: 50%;
-	right: 0em;
+	right: 5em;
 	padding: 1.8em;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -91,22 +91,20 @@ a#menu.open span::after {
 }
 
 #menu-main-navigation {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
+	display: block;
+	text-align: center;
+	white-space: nowrap;
 }
 
 #menu-main-navigation li {
-	flex: 1 1 100%;
-	text-align: center;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #menu-main-navigation li a {
 	text-decoration: none;
 	display: block;
-	padding: 2rem 0;
+	padding: 1rem 1.5em;
 	font-size: 1.5rem;
 	color: black;
 	transition: all 0.3s;
