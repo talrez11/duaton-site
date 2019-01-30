@@ -128,23 +128,23 @@ section.icons ul li:first-of-type svg path {
 }
 
 section.icons ul li:nth-of-type(2) svg path {
-	animation: animate 6s linear 0s infinite alternate;
+	animation: animate 6s linear 1s infinite alternate;
 }
 
 section.icons ul li:nth-of-type(3) svg path {
-	animation: animate 6s linear 0s infinite alternate;
+	animation: animate 6s linear 2s infinite alternate;
 }
 
 section.icons ul li:nth-of-type(4) svg path {
-	animation: animate 6s linear 0s infinite alternate;
+	animation: animate 6s linear 3s infinite alternate;
 }
 
 section.icons ul li:nth-of-type(5) svg path {
-	animation: animate 6s linear 0s infinite alternate;
+	animation: animate 6s linear 4s infinite alternate;
 }
 
 section.icons ul li:nth-of-type(6) svg path {
-	animation: animate 6s linear 0s infinite alternate;
+	animation: animate 6s linear 5s infinite alternate;
 }
 
 /*section.icons ul li:hover .path{*/
@@ -157,11 +157,22 @@ section.icons ul li:nth-of-type(6) svg path {
 /*}*/
 
 @keyframes animate {
-	from {
+	0% {
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
 	}
-	to {
+
+	20% {
+		stroke-dashoffset: 1000;
+		stroke-dasharray: 800;
+	}
+
+	50% {
+		stroke-dashoffset: 100;
+		stroke-dasharray: 600;
+	}
+
+	100% {
 		stroke-dashoffset: 10;
 		stroke-dasharray: 500;
 	}
