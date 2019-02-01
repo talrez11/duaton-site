@@ -18,11 +18,13 @@ $page_desc= get_field('description', $post->ID, true);
     </div>
 </section>
 
-<section class="content">
-    <div>
-        <?php echo $page_desc; ?>
-    </div>
-</section>
+<?php if(!empty($page_desc)) { ?>
+    <section class="content">
+        <div>
+            <?php echo $page_desc; ?>
+        </div>
+    </section>
+<?php } ?>
 
 <section class="project">
     <?php if( have_rows('column') ): ?>

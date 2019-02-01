@@ -111,7 +111,6 @@ section.icons ul li svg {
 	width: auto;
 	height: 150px;
 	display: block;
-	margin-top: 2em;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -184,7 +183,6 @@ section.icons ul li h3 {
 	font-size: 1.5rem;
 	line-height: 1.2;
 	min-height: 3.5em;
-	border-bottom: 3px solid rgb(255, 255, 255);
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
