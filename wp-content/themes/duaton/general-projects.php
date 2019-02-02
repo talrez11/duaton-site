@@ -26,6 +26,10 @@
                                             <div class="description">
                                                 <span><?php echo $description; ?></span>
                                             </div>
+                                        <?php } else { ?>
+                                            <div class="description">
+                                                <span class="project">לפרוייקט</span>
+                                            </div>
                                         <?php } ?>
                                     </a>
                                 <?php endwhile; ?>
