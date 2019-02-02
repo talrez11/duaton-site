@@ -10,6 +10,10 @@ header {
 	display: block;
 }
 
+header div.top {
+	display: none;
+}
+
 .menu-main-navigation-container {
 	display: none;
 }
@@ -146,15 +150,6 @@ section.icons ul li:nth-of-type(6) svg path {
 	animation: animate 6s linear 5s infinite alternate;
 }
 
-/*section.icons ul li:hover .path{*/
-	/*stroke-width: 1px;*/
-	/*fill: rgb(249, 160, 27);*/
-	/*stroke-dashoffset: 10;*/
-	/*stroke-dasharray: 500;*/
-	/*transition: all 3s;*/
-	/*stroke-width: 0px;*/
-/*}*/
-
 @keyframes animate {
 	0% {
 		stroke-dasharray: 1000;
@@ -232,5 +227,60 @@ section.logos ul li {
 
 	section.logos {
 		padding: 3em 1em;
+	}
+}
+
+/* Mobile*/
+
+@media only screen and (max-width: 767px) {
+	section.icons {
+		padding: 1em 0em;
+	}
+	section.icons ul {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		justify-content: normal;
+		-webkit-overflow-scrolling: touch;
+		flex-direction: row;
+	}
+
+	section.icons ul li {
+		flex: 0 0 auto;
+		width: 180px;
+	}
+
+	section.icons ul li h3 {
+		font-size: 1.2rem;
+		width: 100%;
+		min-height: 1em;
+		padding-bottom: 0em;
+	}
+
+	section.icons ul li svg {
+		width: 100px;
+	}
+
+	section.logos {
+		padding: 0;
+		padding-top: 1em;
+	}
+
+	section.logos ul {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		justify-content: normal;
+	}
+
+	section.logos ul li {
+		width: 155px;
+		transition: all 0.3s;
+		margin-bottom: 1em;
+		position: relative;
+		border: 1px solid transparent;
+		overflow: hidden;
+		flex: 0 0 auto;
 	}
 }
