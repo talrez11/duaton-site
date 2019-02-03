@@ -5,10 +5,16 @@
  * Contains the closing of the "site-content" div and all content after.
  *
  */
+
+    if(is_mobile()) {
+        $footer_text = "התקשרו אלינו - <a href=\"tel:09-7711260\">09-7711260</a>";
+    } else {
+        $footer_text = "השאירו לנו פרטים או פשוט תתקשרו אלינו - 09-7711260<br>פותחים יומן? מתי נפגשים לקפה אצנו?";
+    }
 ?>
 	</div><!-- .site-content -->
 	<footer id="bottom">
-            <h3>השאירו לנו פרטים או פשוט תתקשרו אלינו - 09-7711260<br>פותחים יומן? מתי נפגשים לקפה אצנו?</h3>
+            <h3><?php echo $footer_text; ?></h3>
             <form id="signup" method="post">
                 <input type="hidden" name="action" value="send_to_mailchimp"/>
                 <div>

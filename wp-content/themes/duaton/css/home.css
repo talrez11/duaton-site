@@ -233,6 +233,36 @@ section.logos ul li {
 /* Mobile*/
 
 @media only screen and (max-width: 767px) {
+	header div.top {
+		display: block;
+	}
+
+	.menu-main-navigation-container {
+		display: block;
+	}
+
+	div.row {
+		flex-wrap: wrap;
+	}
+
+	div.row div {
+		background-size: 100% auto;
+		height: 49.5vw;
+		width: 50%;
+	}
+
+	div.row div:before {
+		background-color: transparent;
+	}
+
+	div.row div.wide {
+		order: 3;
+	}
+
+	div.row div.logo a {
+		display: none;
+	}
+
 	section.icons {
 		padding: 1em 0em;
 	}
@@ -247,18 +277,27 @@ section.logos ul li {
 
 	section.icons ul li {
 		flex: 0 0 auto;
-		width: 180px;
+		width: 140px;
 	}
 
 	section.icons ul li h3 {
-		font-size: 1.2rem;
+		font-size: 1rem;
 		width: 100%;
 		min-height: 1em;
 		padding-bottom: 0em;
 	}
 
 	section.icons ul li svg {
-		width: 100px;
+		width: 80px;
+	}
+
+	section.icons ul li:nth-of-type(6) svg path,
+	section.icons ul li:nth-of-type(5) svg path,
+	section.icons ul li:nth-of-type(4) svg path,
+	section.icons ul li:nth-of-type(3) svg path,
+	section.icons ul li:nth-of-type(2) svg path,
+	section.icons ul li:first-of-type svg path {
+		animation: none;
 	}
 
 	section.logos {

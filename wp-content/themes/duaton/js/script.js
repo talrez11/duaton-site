@@ -99,4 +99,9 @@ jQuery(window).ready(function() {
 			scrollTop: jQuery( jQuery(this).attr('href') ).offset().top + 50
 		}, 600);
 	});
+
+	// Open projects mobile event
+	jQuery('a#project').on('click', function() {
+		jQuery('.menu-main-navigation-container').toggleClass('open');
+	});
 });
