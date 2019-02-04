@@ -182,7 +182,6 @@ div.about_overlay.show {
 	z-index: 100000;
 }
 
-
 div.menu {
 	width: 50vw;
 	height: 49vw;
@@ -319,7 +318,6 @@ div#about a.close span:before {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-
 
 div#about a.close span:after {
 	content: "";
@@ -606,6 +604,11 @@ div.copy span:first-of-type {
 
 /*Mobile Version*/
 @media only screen and (max-width: 767px) {
+	#menu-main-navigation li.current-menu-item a {
+		font-weight: 700;
+		background-color: rgb(255, 157, 59);
+	}
+
 	div.about_overlay, div.overlay {
 		top: -100%;
 	}
