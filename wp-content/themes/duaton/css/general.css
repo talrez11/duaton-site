@@ -165,3 +165,31 @@ a[href=""] {
         background-size: 100% auto;
     }
 }
+
+/*Mobile Version*/
+
+@media only screen and (max-width: 767px) {
+    div.column-big a:hover div.description span,
+    div.column-small a:hover div.description span,
+    div.column a:hover div.description span,
+    div.row a:hover div.description span {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        transition-delay: 0.6s;
+    }
+
+    div.column-big a div.description:before,
+    div.column-small a div.description:before,
+    div.column a div.description:before,
+    div.row a div.description:before {
+        display: none;
+    }
+
+    div.column-big a div.description:after,
+    div.column-small a div.description:after,
+    div.column a div.description:after,
+    div.row a div.description:after {
+        display: none;
+    }
+}

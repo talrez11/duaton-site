@@ -22,8 +22,8 @@ jQuery(window).ready(function() {
 	};
 
 	var loader = jQuery('.lds-ring');
-	var successResponse = '<h4>תודה שנרשמתם! נציג מטעמנו יחזור אלייכם בקרוב</h4>';
-	var errorMessage = '<h4>תודה שנרשמתם! נציג מטעמנו יחזור אלייכם בקרוב</h4>';
+	var successResponse = '<h4>תודה על פנייתך! ההודעה נשלחה בהצלחה. נדבר בקרוב</h4>';
+	var errorMessage = '<h4>מצטערים, תקלה. נסו שנית</h4>';
 	jQuery('#signup').on('submit', function() {
 		event.preventDefault();
 		loader.addClass('show');

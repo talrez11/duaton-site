@@ -18,13 +18,13 @@
             <form id="signup" method="post">
                 <input type="hidden" name="action" value="send_to_mailchimp"/>
                 <div>
-                    <input name="fname" id="fname" type="text" placeholder="שם" />
+                    <input name="fname" id="fname" type="text" placeholder="שם" required="required"/>
                 </div>
                 <div>
                     <input name="phone" id="phone" type="text" placeholder="טלפון"/>
                 </div>
                 <div>
-                    <input name="email" id="email" type="email" placeholder="דוא''ל"/>
+                    <input name="email" id="email" type="email" placeholder="דוא''ל" required="required"/>
                 </div>
                 <div>
                     <input name="company" id="company" type="text" placeholder="חברה"/>
