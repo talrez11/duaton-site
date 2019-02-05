@@ -141,4 +141,11 @@ a#menu.open span::after {
 	border-bottom-color: rgb(0, 77, 73);
 }
 
+@media only screen and (max-width: 1367px) {
+	#menu-main-navigation li a {
+		font-size: 1.5rem;
+		padding: 1em 1em;
+	}
+}
+
 

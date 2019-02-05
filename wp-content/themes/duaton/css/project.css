@@ -13,6 +13,7 @@ section.header {
     background-size: 100% auto;
     height: calc(100vw * 850/1935);
     position: relative;
+    margin-bottom: 2%;
 }
 
 section.header div.title {

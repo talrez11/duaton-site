@@ -602,6 +602,36 @@ div.copy span:first-of-type {
 	}
 }
 
+@media only screen and (max-width: 1367px) {
+	footer svg {
+		width: 35%;
+	}
+
+	#menu-main-menu li a {
+		font-size: 1.5rem;
+		padding: 0.6em;
+	}
+
+	div.menu {
+		background-position: 95px 86px, center center;
+	}
+
+	div#about p {
+		margin: 1.5em 0em;
+		font-size: 1.1rem;
+		line-height: 1.2;
+	}
+
+	#menu-main-navigation li a {
+		font-size: 1.3rem;
+		padding: 1em 0.5em;
+	}
+
+	#signup div.text, #signup div.image {
+		margin: 0.5em;
+	}
+}
+
 /*Mobile Version*/
 @media only screen and (max-width: 767px) {
 	#menu-main-navigation li.current-menu-item a {
