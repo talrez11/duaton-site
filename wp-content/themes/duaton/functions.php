@@ -25,7 +25,8 @@
 		// Put your MailChimp API and List ID hehe
 		$api_key = MAILCHIMP_API;
 		$list_id = '5af679a8d7';
-		$to = array('studiosuoton@gmail.com', 'talreznic11@gmail.com');
+		$to = array('studiosuoton@gmail.com');
+        $cc = 'talreznic11@gmail.com';
 		$from = $_POST['email'];
 		$subject = 'פנייה מאתר דואטון';
 		$email_content = $_POST['message'];
