@@ -25,18 +25,28 @@
 		// Put your MailChimp API and List ID hehe
 		$api_key = MAILCHIMP_API;
 		$list_id = '5af679a8d7';
-		$to = array('studiosuoton@gmail.com');
+		$to = 'studiosuoton@gmail.com';
         $cc = 'talreznic11@gmail.com';
 		$from = $_POST['email'];
 		$subject = 'פנייה מאתר דואטון';
 		$email_content = $_POST['message'];
+		$phone = $_POST['phone'];
+		$name = $_POST['fname'];
+		$email = $_POST['email'];
 		$content_type = 'Content-Type: text/html; charset=UTF-8';
 		$headers = array();
 		$headers[] = "From: $from <$from> \r\n";
 		$headers[] = "CC: $cc";
 		$headers[] = $content_type;
+        $email_message = "<br />
+        Name: $name<br />
+        Email: $email<br />
+        Phone: $phone<br />
+        Message : $email_content<br />
+        <br />
+        Thank You.";
 
-		wp_mail($to, $subject, $email_content, $headers);
+		wp_mail($to, $subject, $email_message, $headers);
 
 		// Let's start by including the MailChimp API wrapper
 		include('includes/MailChimp.php');
