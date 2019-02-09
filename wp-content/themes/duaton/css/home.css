@@ -293,7 +293,7 @@ section.logos ul li {
 
 	section.icons ul li {
 		flex: 0 0 auto;
-		width: 140px;
+		width: 150px;
 	}
 
 	section.icons ul li h3 {
@@ -305,6 +305,10 @@ section.logos ul li {
 
 	section.icons ul li svg {
 		width: 80px;
+	}
+
+	.path {
+		fill: white;
 	}
 
 	section.icons ul li:nth-of-type(6) svg path,

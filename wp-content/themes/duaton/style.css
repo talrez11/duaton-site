@@ -794,6 +794,7 @@ div.copy span:first-of-type {
 		font-weight: 600;
 		padding: 1rem;
 		text-decoration: none;
+		font-size: 1rem;
 	}
 
 	footer h3 {
@@ -814,6 +815,11 @@ div.copy span:first-of-type {
 		display: block;
 		width: 95%;
 		margin: 1em auto;
+	}
+
+	#signup div textarea,
+	#signup div input {
+		padding: 0.5em;
 	}
 
 	#signup div input[type="submit"] {
