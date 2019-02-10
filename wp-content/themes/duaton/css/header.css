@@ -141,6 +141,21 @@ a#menu.open span::after {
 	border-bottom-color: rgb(0, 77, 73);
 }
 
+#menu-main-navigation li.current-menu-item:nth-of-type(6) a,
+#menu-main-navigation li:nth-of-type(6) a:hover {
+	border-bottom-color: rgb(29, 161, 242);
+}
+
+#menu-main-navigation li.current-menu-item:nth-of-type(7) a,
+#menu-main-navigation li:nth-of-type(7) a:hover {
+	border-bottom-color: rgb(183, 31, 242);
+}
+
+#menu-main-navigation li.current-menu-item:nth-of-type(8) a,
+#menu-main-navigation li:nth-of-type(8) a:hover {
+	border-bottom-color: rgb(78, 242, 58);
+}
+
 @media only screen and (max-width: 1367px) {
 	#menu-main-navigation li a {
 		font-size: 1.5rem;

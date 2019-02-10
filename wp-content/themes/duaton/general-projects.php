@@ -28,7 +28,7 @@
                                             </div>
                                         <?php } else { ?>
                                             <div class="description">
-                                                <span class="project">לפרוייקט</span>
+                                                <span class="project"> לפרוייקט &larr;</span>
                                             </div>
                                         <?php } ?>
                                     </a>

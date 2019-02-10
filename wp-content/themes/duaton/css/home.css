@@ -78,10 +78,33 @@ body.open div.row div.wide:hover {
 div.row div.logo a {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -2px;
 	z-index: 1000;
-	width: 183px;
-	height: 480px;
+	width: 145px;
+	height: 455px;
+	overflow: hidden;
+}
+
+div.row div.logo a:after {
+	content: '';
+	position: absolute;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	background-color: rgb(255, 255, 255);
+	top: -12.5px;
+	animation: arrow 0.5s linear 0s infinite alternate;
+}
+
+@keyframes arrow {
+	from {
+		top: -19px;
+	}
+	to {
+		top: -12.5px;
+	}
 }
 
 div.row div.logo a img {
@@ -154,21 +177,25 @@ section.icons ul li:nth-of-type(6) svg path {
 	0% {
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
+		fill: white;
 	}
 
 	20% {
 		stroke-dashoffset: 1000;
 		stroke-dasharray: 800;
+		fill: white;
 	}
 
 	50% {
 		stroke-dashoffset: 100;
 		stroke-dasharray: 600;
+		fill: white;
 	}
 
 	100% {
 		stroke-dashoffset: 10;
 		stroke-dasharray: 500;
+		fill: white;
 	}
 }
 

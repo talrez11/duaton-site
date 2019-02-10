@@ -191,10 +191,10 @@ div.menu {
 	z-index: 1000;
 	left: 50%;
 	transform: translateX(-50%);
-	background: url("/wp-content/themes/duaton/images/woman_lineart.svg"), url("/wp-content/themes/duaton/images/contact.jpg");
+	background: url("/wp-content/themes/duaton/images/contact.jpg");
 	background-repeat: no-repeat;
-	background-position: 167px 145px, center center;
-	background-size: 40% auto, cover;
+	background-position: center center;
+	background-size: cover;
 	padding: 2em 5em;
 	opacity: 0;
 	visibility: hidden;
@@ -202,7 +202,7 @@ div.menu {
 }
 
 body.home div.menu {
-	top: 24.5vw;
+	top: 25%;
 }
 
 div.menu.open {
@@ -347,7 +347,7 @@ footer h3 {
 	display: block;
 	font-weight: 700;
 	font-size: 2.2rem;
-	color: rgb(255, 130, 49);
+	color: rgb(255, 157, 59);
 	line-height: 1.5;
 	position: relative;
 }
@@ -357,7 +357,7 @@ footer h3:before {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url("/wp-content/themes/duaton/images/icon_contact.svg");
+	background-image: url("/wp-content/themes/duaton/images/icon_contact2.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
@@ -369,6 +369,7 @@ footer h3:before {
 #signup {
 	margin-top: 2em;
 	position: relative;
+	margin-bottom: 250px;
 }
 
 #signup div {
@@ -457,12 +458,13 @@ footer h3:before {
 }
 
 #signup div input[type="submit"] {
-	background-color: rgb(255, 130, 49);
+	background-color: rgb(255, 157, 59);
 	color: white;
 	font-weight: 700;
 	cursor: pointer;
 	width: 330px;
 	margin-right: auto;
+	-webkit-appearance: none;
 }
 
 #signup div input:hover,
@@ -584,12 +586,14 @@ div.copy span:first-of-type {
 	}
 }
 
-@media only screen and (max-width: 1600px) {
-	div.menu {
-		padding: 0.5em 5em;
-		background-position: 167px 135px, center center;
-	}
+@media only screen and (max-width: 1920px) {
 
+	body.home div.menu {
+		top: 24.5vw;
+	}
+}
+
+@media only screen and (max-width: 1600px) {
 	#menu-main-menu li a {
 		padding: 0.8em;
 	}
@@ -610,10 +614,6 @@ div.copy span:first-of-type {
 	#menu-main-menu li a {
 		font-size: 1.5rem;
 		padding: 0.6em;
-	}
-
-	div.menu {
-		background-position: 95px 86px, center center;
 	}
 
 	div#about p {

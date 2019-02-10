@@ -103,6 +103,7 @@ div.row a div.description span {
     visibility: hidden;
     transition: all 0.3s;
     transition-delay: 0s;
+    white-space: nowrap;
 }
 
 div.column-big a:hover div.description span,
@@ -139,11 +140,6 @@ div.column-big a.large {
 
 div.row div:hover:before {
     background-color: transparent;
-}
-
-span.project {
-    padding: 0.7em 3em;
-    background-color: rgb(249, 160, 27);
 }
 
 a[href=""] {

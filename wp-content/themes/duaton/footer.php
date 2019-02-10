@@ -42,7 +42,6 @@
                 <span id="response"></span>
             </form>
 
-            <?php include_once ('images/man_lineart.svg');?>
             <a href="#top" class="up">
                 <img src="<?php echo get_stylesheet_directory_uri().'/images/icon_errow.svg'; ?>" alt="arrow"/>
             </a>
