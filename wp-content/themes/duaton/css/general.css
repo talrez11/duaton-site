@@ -152,13 +152,13 @@ a[href=""] {
     div.column a,
     div.row a {
         height: 32.5vw;
-        background-size: 100% auto;
+        background-size: 102% auto;
     }
 
     div.column-small a.large,
     div.column-big a.large {
         height: 65.5vw;
-        background-size: 100% auto;
+        background-size: 102% auto;
     }
 }
 

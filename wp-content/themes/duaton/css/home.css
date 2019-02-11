@@ -81,7 +81,7 @@ div.row div.logo a {
 	left: -2px;
 	z-index: 1000;
 	width: 145px;
-	height: 460px;
+	height: 490px;
 	overflow: hidden;
 }
 
@@ -218,6 +218,13 @@ section.icons ul li span {
 
 section.logos {
 	padding: 3em 8em;
+}
+
+section.logos h2 {
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	color: rgb(255, 157, 59);
 }
 
 section.logos ul {

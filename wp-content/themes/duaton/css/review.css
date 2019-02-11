@@ -44,7 +44,7 @@ section.review {
 section.review div {
     padding: 1em 0em;
     border-bottom: 3px solid rgb(255, 130, 49);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 section.review div:first-of-type {

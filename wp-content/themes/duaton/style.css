@@ -347,7 +347,7 @@ footer {
 footer h3 {
 	display: block;
 	font-weight: 700;
-	font-size: 2.2rem;
+	font-size: 1.5rem;
 	color: rgb(255, 157, 59);
 	line-height: 1.5;
 	position: relative;
@@ -362,8 +362,8 @@ footer h3:before {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
-	width: 135px;
-	height: 145px;
+	width: 120px;
+	height: 135px;
 	margin-bottom: 1em;
 }
 
@@ -447,7 +447,7 @@ footer h3:before {
 	width: 100%;
 	padding: 1em;
 	border: none;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	color: black;
 	border: 3px solid transparent;
 	background-color: white;
@@ -799,7 +799,7 @@ div.copy span:first-of-type {
 	}
 
 	footer h3 {
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 	}
 
 	footer h3 a {
@@ -809,6 +809,10 @@ div.copy span:first-of-type {
 	footer h3:before {
 		width: 90px;
 		height: 95px;
+	}
+
+	#signup {
+		margin-bottom: 130px;
 	}
 
 	#signup div.submit,
@@ -825,6 +829,7 @@ div.copy span:first-of-type {
 
 	#signup div input[type="submit"] {
 		width: 100%;
+		padding: 0.7em;
 	}
 
 	#signup div.text,

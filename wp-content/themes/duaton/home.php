@@ -64,6 +64,7 @@
 </section>
 
 <section class="logos">
+    <h2>הלקוחות שלנו</h2>
     <ul>
         <?php if( have_rows('logos') ): ?>
             <?php while( have_rows('logos') ): the_row(); // vars
