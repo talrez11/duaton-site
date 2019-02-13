@@ -30,7 +30,7 @@
                 <a href="javascript:void(0)" id="menu"><span></span></a>
             </div>
             <?php if(is_mobile()) { ?>
-                <a id="project" href="javascript:void(0);">לקטגוריות</a>
+                <a id="project" href="javascript:void(0);"> לקטגוריות &raquo;</a>
             <?php } ?>
             <?php
             wp_nav_menu( array(
