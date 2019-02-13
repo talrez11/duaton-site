@@ -146,7 +146,7 @@ a[href=""] {
     cursor: default;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1980px) {
     div.column-big a,
     div.column-small a,
     div.column a,
