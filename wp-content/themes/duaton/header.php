@@ -21,7 +21,7 @@
 
         gtag('config', 'UA-134481042-1');
     </script>
-
+g
     <title><?php wp_title(); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
