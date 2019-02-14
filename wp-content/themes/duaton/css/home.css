@@ -81,39 +81,28 @@ div.row div.logo a {
 	left: -2px;
 	z-index: 1000;
 	width: 145px;
-	height: 490px;
+	height: 492px;
 	overflow: hidden;
-}
-
-div.row div.logo a:after {
-	content: '';
-	position: absolute;
-	-webkit-transform: translateX(-50%) rotate(45deg);
-	transform: translateX(-50%) rotate(45deg);
-	left: 50%;
-	width: 25px;
-	height: 25px;
-	background-color: rgb(255, 255, 255);
-	top: -12.5px;
-	animation: arrow 0.5s linear 0s infinite alternate;
-}
-
-@keyframes arrow {
-	from {
-		top: -19px;
-	}
-	to {
-		top: -12.5px;
-	}
 }
 
 div.row div.logo a img {
 	display: block;
-	width: auto;
+	width: calc(2.4vw * (480/153));
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 460px;
+	border: 0px solid rgb(255, 157, 59);
+	animation: arrow 1s linear 0s infinite alternate;
+}
+
+@keyframes arrow {
+	from {
+		border-width: 0px;
+	}
+	to {
+		border-width: 8px;
+	}
 }
 
 section.icons {
