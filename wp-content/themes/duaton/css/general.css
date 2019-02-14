@@ -188,4 +188,31 @@ a[href=""] {
     div.row a div.description:after {
         display: none;
     }
+
+    div.column-big a div.description.soon span,
+    div.column-small a div.description.soon span,
+    div.column a div.description.soon span,
+    div.row a div.description.soon span {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s;
+        transition-delay: 0.6s;
+        font-size: 1.2rem;
+    }
+
+    div.column-big a div.description.soon:before,
+    div.column-small a div.description.soon:before,
+    div.column a div.description.soon:before,
+    div.row a div.description.soon:before {
+        display: block;
+        top: 0;
+    }
+
+    div.column-big a div.description.soon:after,
+    div.column-small a div.description.soon:after,
+    div.column a div.description.soon:after,
+    div.row a div.description.soon:after {
+        display: block;
+        bottom: 0;
+    }
 }

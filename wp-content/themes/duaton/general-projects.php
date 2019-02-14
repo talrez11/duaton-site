@@ -2,6 +2,7 @@
 //Template Name: General Projects
     wp_enqueue_style('general-projects', get_stylesheet_directory_uri().'/css/general.css?vn='.THEME_VERSION, array(), true);
     wp_enqueue_script('script', get_stylesheet_directory_uri().'/js/script.js?vn='.THEME_VERSION, array('jquery'), true);
+    $projectSoon = 'יעלה בקרוב';
 ?>
 
 <?php get_header(); ?>
@@ -21,10 +22,10 @@
                                     $url = get_sub_field('url');
                                     $description = get_sub_field('description');
                                 ?>
-                                    <a href="<?php echo $url; ?>" class="<?php echo $class; ?>" style="background-image: url('<?php echo $image; ?>');">
-                                        <?php if(!empty($description)) { ?>
-                                            <div class="description">
-                                                <span><?php echo $description; ?></span>
+                                    <a href="<?php echo ($url == get_home_url() || empty($url)) ? 'javascript:void(0)' : $url; ?>" class="<?php echo $class; ?>" style="background-image: url('<?php echo $image; ?>');">
+                                        <?php if($url == get_home_url() || empty($url)) { ?>
+                                            <div class="description soon">
+                                                <span><?php echo $projectSoon; ?></span>
                                             </div>
                                         <?php } else { ?>
                                             <div class="description">
