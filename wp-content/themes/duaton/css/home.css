@@ -365,4 +365,8 @@ section.logos ul li {
 		overflow: hidden;
 		flex: 0 0 auto;
 	}
+
+	#signup div.text, #signup div.image {
+		margin: 0 auto;
+	}
 }

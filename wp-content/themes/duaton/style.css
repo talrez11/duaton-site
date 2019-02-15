@@ -849,6 +849,10 @@ div.copy span:first-of-type {
 		margin-top: 130px;
 	}
 
+	#response h4 {
+		font-size: 1.5rem;
+	}
+
 	div.copy span:first-of-type {
 		margin: 0;
 	}
