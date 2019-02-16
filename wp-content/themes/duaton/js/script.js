@@ -39,6 +39,12 @@ jQuery(window).ready(function() {
 			jQuery('#response').addClass('show');
 			if(response == 1) {
 				jQuery('#response').html(successResponse);
+				ga('send', 'event', {
+					eventCategory: 'Signup mail',
+					eventAction: 'click',
+					eventLabel: 'Duoton Signups'
+				});
+
 			} else {
 				jQuery('#response').html(errorMessage);
 			}

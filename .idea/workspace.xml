@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72cf572-fe27-418e-aed9-eaf577dac75d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/duaton/includes/env.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/duaton/includes/env.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/duaton/includes/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/duaton/includes/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/duaton/project.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/duaton/project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/duaton/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/duaton/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,11 +75,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/duaton/includes/env.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="84">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/duaton/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -120,7 +126,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/reviews.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/images/back.svg" />
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/includes/about.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/duaton/js/script.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/images/icon2.svg" />
@@ -142,12 +147,13 @@
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/includes/menu.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/project.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/duaton/includes/env.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/duaton/js/script.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="60" />
-    <option name="y" value="-11" />
+    <option name="y" value="1069" />
     <option name="width" value="1861" />
     <option name="height" value="1092" />
   </component>
@@ -189,15 +195,7 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="duaton" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="duaton-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="duaton-site" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="duaton" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,15 +282,15 @@
       <workItem from="1550176837389" duration="3692000" />
       <workItem from="1550209873506" duration="504000" />
       <workItem from="1550254114308" duration="1020000" />
-      <workItem from="1550341214547" duration="332000" />
+      <workItem from="1550341214547" duration="1626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185611000" />
+    <option name="totallyTimeSpent" value="186905000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="-11" width="1861" height="1092" extended-state="6" />
+    <frame x="60" y="1069" width="1861" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15278544" />
@@ -365,13 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="22" column="27" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/duaton/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -532,8 +523,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/duaton/includes/env.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="84">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/duaton/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
         </state>
       </provider>
     </entry>
