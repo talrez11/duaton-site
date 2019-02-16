@@ -35,7 +35,7 @@ $page_desc= get_field('description', $post->ID, true);
                                     $class = get_sub_field('class');
                                     $url = get_sub_field('url');
                                     ?>
-                                    <a href="<?php echo $url; ?>" class="<?php echo $class; ?>" style="background-image: url('<?php echo $image; ?>');"></a>
+                                    <a href="javascript:void(0);" class="<?php echo $class; ?>" style="background-image: url('<?php echo $image; ?>');"></a>
                                 <?php endwhile; ?>
                             <?php endif; ?>
                         </div>
