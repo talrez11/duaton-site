@@ -18,6 +18,70 @@ header div.top {
 	display: none;
 }
 
+a#menu_float {
+	position: fixed;
+	display: inline-block;
+	top: 2em;
+	right: 0;
+	padding: 1.8em;
+	outline: 0;
+	z-index: 100000;
+	background-color: rgb(0, 0, 0);
+}
+
+a#menu_float span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 35px;
+	height: 7px;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	background-color: rgb(249, 160, 27);
+	border-radius: 15px;
+	transition: all 0.3s;
+}
+
+a#menu_float.open span {
+	background-color: transparent;
+}
+
+a#menu_float span:before {
+	content: "";
+	position: absolute;
+	top: -0.8em;
+	left: 0;
+	width: 100%;
+	height: 7px;
+	background-color: rgb(249, 160, 27);
+	border-radius: 15px;
+	transition: all 0.3s;
+}
+
+a#menu_float.open span:before {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 0;
+}
+
+a#menu_float span:after {
+	content: "";
+	position: absolute;
+	top: 0.8em;
+	left: 0;
+	width: 100%;
+	height: 7px;
+	background-color: rgb(249, 160, 27);
+	border-radius: 15px;
+	transition: all 0.3s;
+}
+
+a#menu_float.open span::after {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 0;
+}
+
 div.gallery {
 	position: relative;
 }

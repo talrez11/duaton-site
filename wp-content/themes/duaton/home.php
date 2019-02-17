@@ -5,7 +5,9 @@
 ?>
 
 <?php get_header(); ?>
-
+    <?php if(!is_mobile()) { ?>
+        <a href="javascript:void(0)" id="menu_float"><span></span></a>
+    <?php } ?>
 
 <div class="gallery" id="top">
     <?php include_once ('includes/menu.php');?>

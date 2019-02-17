@@ -57,27 +57,43 @@ jQuery(window).ready(function() {
 		jQuery('#response').html(' ');
 	}
 
+	jQuery('a#menu_float').on('click', function(event) {
+		event.preventDefault();
+		jQuery(this).toggleClass('open');
+		jQuery('body').toggleClass('open up');
+		jQuery('div.menu').toggleClass('open');
+		jQuery('div.overlay').toggleClass('show');
+		jQuery('body, html').animate({
+			scrollTop: jQuery(jQuery('#menu-main-menu')).offset().top - 100
+		}, 600);
+	});
+
 	jQuery('header a#menu').on('click', function(event) {
 		event.preventDefault();
 		jQuery(this).toggleClass('open');
 		jQuery('body').toggleClass('open up');
 		jQuery('div.menu').toggleClass('open');
 		jQuery('div.overlay').toggleClass('show');
+		jQuery('a#menu_float').toggleClass('open');
 	});
 
 	//Open menu
 	jQuery('a.menu_open').on('click', function() {
 		jQuery('body').toggleClass('open');
 		jQuery('div.menu').toggleClass('open');
+		jQuery('div.overlay').toggleClass('show');
+		jQuery('a#menu_float').toggleClass('open');
 	});
 
 	jQuery('#menu-main-menu a').on('click', function() {
 		if(jQuery(this).hasClass('about')) {
 			jQuery('div.about_overlay').toggleClass('show');
 			jQuery('div#about').toggleClass('open');
+			jQuery('a#menu_float').toggleClass('open');
 		}
 
 		if(jQuery(this).hasClass('bottom')) {
+			jQuery('a#menu_float').toggleClass('open');
 			jQuery('body, html').animate({
 				scrollTop: jQuery( jQuery(this).attr('href') ).offset().top + 200
 			}, 600);
