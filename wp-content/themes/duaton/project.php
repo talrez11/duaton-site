@@ -45,6 +45,10 @@ $page_desc= get_field('description', $post->ID, true);
         <?php endwhile; ?>
     <?php endif; ?>
 </section>
+
+<div class="back">
+    <a href="/פרוייקטים/">לפרוייקטים</a>
+</div>
 <?php get_footer(); ?>
 
 
