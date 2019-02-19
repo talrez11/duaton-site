@@ -25,7 +25,7 @@
                         <div class="<?php echo $class; ?>" style="background-image: url('<?php echo $image; ?>');">
                             <?php if($class == 'wide logo') { ?>
                                 <a href="javascript:void(0);" class="menu_open">
-                                    <img src="<?php echo get_stylesheet_directory_uri().'/images/logo.png'; ?>" alt="duaton logo"/>
+                                    <img src="<?php echo get_stylesheet_directory_uri().'/images/logo_big.png'; ?>" alt="duaton logo"/>
                                 </a>
                             <?php }?>
                         </div>

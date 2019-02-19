@@ -62,7 +62,6 @@ jQuery(window).ready(function() {
 		jQuery(this).toggleClass('open');
 		jQuery('body').toggleClass('open up');
 		jQuery('div.menu').toggleClass('open');
-		jQuery('div.overlay').toggleClass('show');
 		jQuery('body, html').animate({
 			scrollTop: jQuery(jQuery('#menu-main-menu')).offset().top - 100
 		}, 600);
@@ -81,7 +80,6 @@ jQuery(window).ready(function() {
 	jQuery('a.menu_open').on('click', function() {
 		jQuery('body').toggleClass('open');
 		jQuery('div.menu').toggleClass('open');
-		jQuery('div.overlay').toggleClass('show');
 		jQuery('a#menu_float').toggleClass('open');
 	});
 

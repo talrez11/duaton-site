@@ -245,7 +245,7 @@ div.menu.open {
 }
 
 div#about {
-	background-image: url("/wp-content/themes/duaton/images/about.jpg");
+	background-image: url("/wp-content/themes/duaton/images/about2.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% auto;
@@ -269,7 +269,8 @@ div#about.open {
 
 div#about article {
 	display: block;
-	width: 35%;
+	width: 25%;
+	overflow: auto;
 }
 
 div#about h3 {

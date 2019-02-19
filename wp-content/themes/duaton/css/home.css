@@ -151,22 +151,12 @@ div.row div.logo a {
 
 div.row div.logo a img {
 	display: block;
-	width: calc(2.4vw * (480/153));
+	width: calc(3vw * (480/183));
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 460px;
 	border: 0px solid rgb(255, 157, 59);
-	animation: arrow 1s linear 0s infinite alternate;
-}
-
-@keyframes arrow {
-	from {
-		border-width: 0px;
-	}
-	to {
-		border-width: 8px;
-	}
 }
 
 section.icons {
