@@ -47,7 +47,7 @@
             </a>
             <div class="copy">
                 <span>עיצוב דואטון</span>
-                <span>כל הזכויות שמורות לסטודיו דואטון Duaton&copy; </span>
+                <span>כל הזכויות שמורות לסטודיו דואטון Duoton&copy; </span>
             </div>
 	</footer><!-- .site-footer -->
 </div><!-- .site -->
