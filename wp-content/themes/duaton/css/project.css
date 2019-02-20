@@ -103,6 +103,7 @@ div.row a {
     height: 640px;
     flex-grow: 1;
     position: relative;
+    cursor: default;
 }
 
 div.row a.large {
