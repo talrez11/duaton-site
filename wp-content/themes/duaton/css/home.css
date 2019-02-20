@@ -151,7 +151,7 @@ div.row div.logo a {
 
 div.row div.logo a img {
 	display: block;
-	width: calc(3.3vw * (480/183));
+	width: calc(38% * (480/183));
 	position: absolute;
 	left: 0;
 	top: 0;
