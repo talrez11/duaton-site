@@ -212,4 +212,16 @@ div.back a:hover:after {
         font-size: 1.5rem;
         padding: 0.3em 1em;
     }
+
+    section.content div {
+        text-align: center;
+        padding: 0.5em;
+        font-size: 1rem;
+    }
+
+    section.content div p {
+        margin: 0;
+        display: inline-block;
+        text-align: right;
+    }
 }

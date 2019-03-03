@@ -19,7 +19,7 @@
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-WSJXKXL');</script>
     <!-- End Google Tag Manager -->
-    
+
     <title><?php wp_title(); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
